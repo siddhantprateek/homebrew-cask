@@ -15,9 +15,8 @@ cask "mouseless" do
   end
 
   conflicts_with cask: "mouseless@preview"
-  depends_on macos: ">= :sonoma"
-  depends_on arch: :arm64
-
+  depends_on macos: ">= :monterey"
+  
   app "Mouseless.app"
 
   zap trash: [
